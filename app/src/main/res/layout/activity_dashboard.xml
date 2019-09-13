@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F4"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="CRUD"
+        android:textColor="#FAFAFA"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:text="Mahasiswa"
+        android:textColor="#FAFAFA"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginLeft="112dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="255dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/student1" />
+
+    <ImageView
+        android:id="@+id/imageLihatData"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageInputData"
+        app:layout_constraintEnd_toEndOf="@+id/imageInputData"
+        app:layout_constraintStart_toStartOf="@+id/imageInputData"
+        app:srcCompat="@drawable/stylebutton1" />
+
+    <ImageView
+        android:id="@+id/imageInputData"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageInformasi"
+        app:layout_constraintEnd_toEndOf="@+id/imageInformasi"
+        app:layout_constraintStart_toStartOf="@+id/imageInformasi"
+        app:srcCompat="@drawable/stylebutton2" />
+
+    <ImageView
+        android:id="@+id/imageInformasi"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/stylebutton3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLihatData"
+        app:layout_constraintStart_toStartOf="@+id/imageLihatData"
+        app:layout_constraintTop_toTopOf="@+id/imageLihatData"
+        app:srcCompat="@drawable/ic_archive_black_24dp"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageInputData"
+        app:layout_constraintStart_toStartOf="@+id/imageInputData"
+        app:layout_constraintTop_toTopOf="@+id/imageInputData"
+        app:srcCompat="@drawable/ic_add_box_black_24dp"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageInformasi"
+        app:layout_constraintStart_toStartOf="@+id/imageInformasi"
+        app:layout_constraintTop_toTopOf="@+id/imageInformasi"
+        app:srcCompat="@drawable/ic_info_black_24dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/lihatdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="LIHAT DATA"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLihatData"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageLihatData" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="INPUT DATA"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageInputData"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageInputData" />
+
+    <TextView
+        android:id="@+id/informasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="INFORMASI"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageInformasi"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageInformasi"
+        android:layout_marginLeft="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
